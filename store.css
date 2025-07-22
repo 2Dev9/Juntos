@@ -75,8 +75,12 @@ h3{
     text-shadow: 0 0 15px #FFD700;
 }
 
-h3:hover,.arrow:hover{
+.arrow:hover{
     box-shadow: 0 0 15px #FFD700,0 0 20px #FFD700;
+}
+
+h3:hover{
+    text-shadow: 0 0 15px #FFD700,0 0 20px #FFD700;
 }
 
 section{
