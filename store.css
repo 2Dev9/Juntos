@@ -1,0 +1,85 @@
+:root{
+    --gold: #FFD700;
+    --rich-gold: #D4AF37;
+    --black: #000000;
+    --soft-black: #0A0A0A;
+    --white: #FFFFFF;
+    --off-white: #F8F8F8;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+body{
+     background: black;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header img{
+    height: 60px;
+    width: 60px;
+    margin: 30px;
+    
+}
+
+.logo{
+    text-shadow: 0 0 19px #FFD700,0 0 20px #000000;
+    font-size: 39px;
+    color: white;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    height: 190px;
+}
+
+h3{
+    color:#FFD700;
+    text-shadow: 0 0 15px #FFD700;
+    font-size: 80px;
+    transition: all 0.4s;
+}
+
+.arrow{
+    color:#FFD700;
+    text-shadow: 0 0 15px #FFD700;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px #FFD700;
+    border: 2px solid #FFD700;
+    font-size: 40px;
+    transition: all 0.4s;
+}
+
+.arrow a{
+    color:#FFD700;
+    text-shadow: 0 0 15px #FFD700;
+}
+
+h3:hover,.arrow:hover{
+    box-shadow: 0 0 15px #FFD700,0 0 20px #FFD700;
+}
+
+section{
+    height: 100vh;
+   
+}
