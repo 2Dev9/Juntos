@@ -120,5 +120,5 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 0 19px transparent;
+    text-shadow: 0 0 19px var(--rich-gold);
 }
