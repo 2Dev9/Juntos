@@ -46,6 +46,11 @@ body{
 .logo{
     text-shadow: 0 0 19px #FFD700;
     font-size: 39px;
+    transition: all 0.4s;
+}
+
+.logo:hover{
+    text-shadow: 0 0 15px #ffd700, 0 0 30px #ffd700;
 }
 
 .main{
@@ -117,8 +122,3 @@ body{
     align-items: center;
     text-shadow: 0 0 19px transparent;
 }
-
-
-
-
-
