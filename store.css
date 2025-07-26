@@ -212,6 +212,17 @@ section {
     cursor: pointer;
 }
 
+.footer{
+    grid-area: footer;
+    color: #f8f8f8;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 19px var(--rich-gold);
+    height: 80px;
+}
+
 /* Mobile Media Queries for Phone Screens */
 @media only screen and (max-width: 768px) {
 /* .header img {
@@ -310,6 +321,18 @@ section {
     min-height: 100vh;
     padding-bottom: 20px;
 }
+
+.footer{
+    grid-area: footer;
+    color: #f8f8f8;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 19px var(--rich-gold);
+    height:20px;
+}
+
 }
 
 /* Extra small phones */
@@ -371,14 +394,4 @@ h3 {
 .title {
     padding-top: 10vh;
 }
-}
-.footer{
-    grid-area: footer;
-    color: #f8f8f8;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 0 19px var(--rich-gold);
-    height: 80px;
 }
