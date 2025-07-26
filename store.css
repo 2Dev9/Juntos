@@ -95,7 +95,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 10px;
 }
 
 .box {
@@ -108,7 +108,7 @@ section {
     border-radius: 9px;
     margin-left: 50px;
     margin-bottom: 50px;
-    width: 260px;
+    width: 300px;
     height: 250px;
     background-color: transparent;
     box-shadow: 0 0 15px var(--gold);
@@ -116,7 +116,7 @@ section {
 }
 
 .box:hover{
-    width: 268px;
+    width: 310px;
     height: 258px;
     box-shadow: 0 0 15px #FFD700,0 0 60px #FFD700;
 }
