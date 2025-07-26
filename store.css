@@ -323,14 +323,8 @@ section {
 }
 
 .footer{
-    grid-area: footer;
-    color: #f8f8f8;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 0 19px var(--rich-gold);
-    height:100px;
+    margin-top: 110px;
+  
 }
 
 }
