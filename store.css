@@ -262,6 +262,12 @@ h3 {
     gap: 15px;
 }
 
+.box:hover{
+    width: 184px;
+    height: 224px;
+    box-shadow: 0 0 15px #FFD700,0 0 60px #FFD700;
+}
+
 .box img {
     width: 100px;
     height: 100px;
@@ -325,6 +331,12 @@ h3 {
     width: 160px;
     height: 200px;
     gap: 12px;
+}
+
+.box:hover{
+    width: 162px;
+    height: 202px;
+    box-shadow: 0 0 15px #FFD700,0 0 60px #FFD700;
 }
 
 .box img {
