@@ -13,28 +13,123 @@
         <img src="logo.png" alt="">
         <div class="logo">Juntos</div>
     </div>
+
     <section>
         <div class="title">
             <h3>PC and accisiores</h3>
             <div class="arrow">
                 <a href="#PC"><i class="fas fa-arrow-down"></i></a>
             </div>
-
         </div>
     </section>
+
     <section>
         <div id="PC" class="PC">
-            
+            <div class="box">
+                <img src="PC gaming.jpg" alt="">
+                <h4>PC gaming</h4>
+                <button onclick="showModal('pcdet')">more details</button>
+            </div>
+
+            <div class="box">
+                <img src="gpu.jpg" alt="">
+                <h4>GPU</h4>
+                <button onclick="showModal('gpudet')">more details</button>
+            </div>
+
+            <div class="box">
+                <img src="Keyboard.jpg" alt="">
+                <h4>Keyboard</h4>
+                <button onclick="showModal('keydet')">more details</button>
+            </div>
+
+            <div class="box">
+                <img src="monitor.jpg" alt="">
+                <h4>Monitor</h4>
+                <button onclick="showModal('mondet')">more details</button>
+            </div>
+
+            <div class="box">
+                <img src="mouse.jpg" alt="">
+                <h4>Mouse</h4>
+                <button onclick="showModal('moudet')">more details</button>
+            </div>
+
+            <div class="box">
+                <h4>Coming soon!</h4>
+            </div>
+
+            <!-- Modal: PC -->
+            <div id="pcdet" class="container modal">
+                <div id="details">
+                    <span class="close-btn" onclick="hideModal(this)">×</span>
+                    <ul>
+                        <li>CPU: Intel Core i7-13700K</li>
+                        <li>RAM: 32GB DDR5</li>
+                        <li>Storage: 1TB SSD + 2TB HDD</li>
+                        <li>GPU: RTX 4080</li>
+                        <li>PSU: 750W Platinum</li>
+                        <li>OS: Windows 11 Pro</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal: GPU -->
+            <div id="gpudet" class="container modal">
+                <div id="details">
+                    <span class="close-btn" onclick="hideModal(this)">×</span>
+                    <ul>
+                        <li>Model: RTX 4080 Super</li>
+                        <li>VRAM: 16GB GDDR6X</li>
+                        <li>Ports: 3x DP, 1x HDMI</li>
+                        <li>DLSS: Version 3.5</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal: Keyboard -->
+            <div id="keydet" class="container modal">
+                <div id="details">
+                    <span class="close-btn" onclick="hideModal(this)">×</span>
+                    <ul>
+                        <li>Model: Keychron K8 Pro</li>
+                        <li>Type: Wireless Mechanical</li>
+                        <li>Switches: Gateron Red</li>
+                        <li>RGB: Yes</li>
+                        <li>Battery: 72h (RGB on)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal: Monitor -->
+            <div id="mondet" class="container modal">
+                <div id="details">
+                    <span class="close-btn" onclick="hideModal(this)">×</span>
+                    <ul>
+                        <li>Model: LG 32GQ950</li>
+                        <li>Size: 32" 4K IPS</li>
+                        <li>Hz: 160Hz</li>
+                        <li>HDR: DisplayHDR 1000</li>
+                        <li>Ports: HDMI 2.1, DP 1.4</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal: Mouse -->
+            <div id="moudet" class="container modal">
+                <div id="details">
+                    <span class="close-btn" onclick="hideModal(this)">×</span>
+                    <ul>
+                        <li>Model: Logitech MX Master 3S</li>
+                        <li>Type: Wireless</li>
+                        <li>DPI: Up to 8000</li>
+                        <li>Battery: 70 days (USB-C)</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
-    <section>
 
-    </section>
-    <section>
-
-    </section>
-    <section>
-
-    </section>
+    <script src="script.js"></script>
 </body>
 </html>
