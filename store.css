@@ -197,3 +197,99 @@ section{
     text-shadow: 0 0 15px #FFD700, 0 0 20px #FFD700;
     cursor: pointer;
 }
+
+/* Extra large screens (desktops > 1200px) */
+@media (min-width: 1200px) {
+  .PC {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large screens (laptops/desktops between 992px and 1199px) */
+@media (max-width: 1199px) {
+  .PC {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .box {
+    margin-left: 0;
+  }
+}
+
+/* Medium screens (tablets between 768px and 991px) */
+@media (max-width: 991px) {
+  .PC {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .title h3 {
+    font-size: 60px;
+  }
+
+  .box {
+    width: 80%;
+    height: auto;
+  }
+
+  .box img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .box img:hover {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* Small screens (phones < 768px) */
+@media (max-width: 767px) {
+  .logo {
+    font-size: 28px;
+  }
+
+  .title h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .arrow {
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .PC {
+    gap: 20px;
+  }
+
+  .box {
+    width: 90%;
+    margin: 0 auto 30px auto;
+  }
+
+  #details {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* Very small screens (phones < 480px) */
+@media (max-width: 480px) {
+  .title {
+    gap: 30px;
+  }
+
+  .box h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .box button {
+    width: 100%;
+  }
+}
+
