@@ -71,6 +71,7 @@ h3 {
 .arrow a {
   color: #ffd700;
   text-shadow: 0 0 15px #ffd700;
+  text-decoration: none;
 }
 
 .arrow:hover {
@@ -88,8 +89,11 @@ section {
 .PC {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 30px;
+  padding: 50px;
+  justify-items: center;
+  align-items: center;
 }
 
 .box {
@@ -100,8 +104,6 @@ section {
   gap: 20px;
   border: 1px solid #ffd700;
   border-radius: 9px;
-  margin-left: 50px;
-  margin-bottom: 50px;
   width: 260px;
   height: 250px;
   background-color: transparent;
@@ -136,6 +138,7 @@ section {
   border: 1px solid #ffd700;
   border-radius: 3px;
   transition: all 0.4s;
+  cursor: pointer;
 }
 
 .box button:hover {
@@ -143,13 +146,17 @@ section {
   text-shadow: 0 0 15px #ffd700;
 }
 
-#pcdet,
-#gpudet,
-#keydet,
-#mondet,
-#moudet {
-  display: none;
-  height: 100vh;
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.94);
+  z-index: 999;
+  color: #ffd700;
+  text-shadow: #ffd700;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -165,18 +172,7 @@ section {
   border: 1px solid #ffd700;
   border-radius: 9px;
   box-shadow: 0 0 15px #ffd700, 0 0 30px #ffd700;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.94);
-  z-index: 999;
-  color: #ffd700;
-  text-shadow: #ffd700;
+  position: relative;
 }
 
 #details ul {
@@ -191,24 +187,20 @@ section {
 }
 
 .close-btn {
-  margin-left: 230px;
-  margin-bottom: 30px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   color: #ffd700;
   text-shadow: 0 0 15px #ffd700, 0 0 20px #ffd700;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* Mobile Media Queries for Phone Screens */
 @media only screen and (max-width: 768px) {
-  .header img {
-    height: 40px;
-    width: 40px;
-    margin: 20px;
-  }
-
-  .logo {
-    font-size: 24px;
-  }
+  /* Header stays the same size - NO CHANGES */
+  /* .header img and .logo keep original dimensions */
 
   .title {
     display: flex;
@@ -246,8 +238,6 @@ section {
   .box {
     width: 180px;
     height: 220px;
-    margin-left: 0;
-    margin-bottom: 20px;
     gap: 15px;
   }
 
@@ -283,11 +273,6 @@ section {
     line-height: 1.6;
   }
 
-  .close-btn {
-    margin-left: 200px;
-    margin-bottom: 20px;
-  }
-
   section {
     height: auto;
     min-height: 100vh;
@@ -297,9 +282,8 @@ section {
 
 /* Extra small phones */
 @media only screen and (max-width: 480px) {
-  .logo {
-    font-size: 20px;
-  }
+  /* Header stays the same size - NO CHANGES */
+  /* .header img and .logo keep original dimensions */
 
   h3 {
     font-size: 36px;
@@ -339,10 +323,6 @@ section {
   #details {
     width: 250px;
     height: 220px;
-  }
-
-  .close-btn {
-    margin-left: 170px;
   }
 
   .title {
